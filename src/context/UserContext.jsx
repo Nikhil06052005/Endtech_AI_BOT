@@ -2,9 +2,12 @@ import React, { createContext } from 'react'
 export const dataContext = createContext()
 function UserContext({children}) {
     let [startRes,setStartRes] = React.useState(false)
+    let [popUp,setPopUp]= React.useState(false)
     let value = {
         startRes,
-        setStartRes
+        setStartRes,
+        popUp,
+        setPopUp
     }
   return (
     <div>

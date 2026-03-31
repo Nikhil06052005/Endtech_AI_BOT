@@ -55,7 +55,7 @@ nav{
 .genImg svg{
   width: 25px;
   height: 25%;
-  color: rgb(7, 236, 240);
+      color: rgb(7, 236, 240);
 }
 .chat svg{
   width: 25px;
@@ -107,7 +107,60 @@ form input{
   color: white;
   font-size: 19px;
 }
-
+.chat-page{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  padding: 10px 20px;
+  overflow-y: auto;
+}
+.user, .ai{
+  width: 90%;
+  padding: 20px 30px;
+  color: white;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  border-radius: 20px;
+  font-size: 20px;
+}
+.pop-up{
+  width: 200px;
+  height: 120px;
+  position: absolute;
+  bottom: 120px;
+  left: 15%;
+  z-index: 10;
+  background-color: rgb(11, 16, 17);
+  border: 2px solid rgba(255, 255, 255, 0.297);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+.select-up, .select-gen{
+  color: white;
+  display: flex;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  font-size: 17px;
+  cursor: pointer;
+}
+.select-up svg{
+  color: rgb(7, 240, 11);
+}
+.select-gen svg{
+  color: rgb(7, 236, 240);
+}
 @media (max-width: 500px) {
   #tag{
     font-size: 20px;
